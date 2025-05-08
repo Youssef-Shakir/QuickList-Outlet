@@ -7,6 +7,6 @@
     "data": [
         "views/product_views.xml"
     ],
-    "installable": true,
-    "application": false
+    "installable": True,
+    "application": False
 }

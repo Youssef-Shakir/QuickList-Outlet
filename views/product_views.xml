@@ -10,7 +10,7 @@
                         <field name="image_1920"/>
                         <field name="list_price"/>
                         <field name="categ_id"/>
-                        <field name="type" invisible="1"/>
+                        <field name="type" widget="selection" invisible="1"/>
                         <field name="website_published"/>
                         <field name="is_outlet_item" invisible="1"/>
                     </group>
@@ -22,18 +22,4 @@
             </form>
         </field>
     </record>
-
-    <record id="action_outlet_product_quick_create" model="ir.actions.act_window">
-        <field name="name">Quick Outlet Product</field>
-        <field name="res_model">product.template</field>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="view_product_outlet_quick_form"/>
-        <field name="context">{'default_is_outlet_item': True, 'default_type': 'product'}</field>
-    </record>
-
-    <menuitem id="menu_outlet_root" name="Outlet Items" sequence="10"/>
-    <menuitem id="menu_outlet_quick_entry" name="Quick Add Item"
-              parent="menu_outlet_root"
-              action="action_outlet_product_quick_create"
-              sequence="1"/>
 </odoo>
