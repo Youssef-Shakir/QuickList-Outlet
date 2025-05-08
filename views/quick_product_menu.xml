@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="menu_quick_product_root" name="Quick Product Entry" parent="sale.sale_menu_root" sequence="25"/>
+
+    <record id="action_quick_product_form" model="ir.actions.act_window">
+        <field name="name">Quick Product</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_product_outlet_quick_form"/>
+        <field name="target">current</field>
+    </record>
+
+    <menuitem id="menu_quick_product_form" name="New Product" parent="menu_quick_product_root" action="action_quick_product_form"/>
+</odoo>

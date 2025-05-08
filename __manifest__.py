@@ -5,7 +5,8 @@
     "category": "Inventory",
     "depends": ["product", "stock", "website_sale"],
     "data": [
-        "views/product_views.xml"
+        "views/product_views.xml",
+	"views/quick_product_menu.xml"
     ],
     "installable": True,
     "application": False
